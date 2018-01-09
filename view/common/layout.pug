@@ -1,0 +1,10 @@
+extends ./head
+block head
+    title #{title ? title : config.SEO.common.title}
+    meta(name="keywords",content=keywords ? keywords : config.SEO.common.keywords)
+    meta(name="description",content=description ? description : config.SEO.common.description)
+    meta(name="format-detection",content="telephone=no, email=no")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    block heads
+block body
+    block content

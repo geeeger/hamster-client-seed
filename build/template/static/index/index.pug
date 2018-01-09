@@ -1,0 +1,17 @@
+extends ../../common/layout
+block heads
+    meta(name='renderer', content='webkit')
+    meta(name='msapplication-tap-highlight', content='no')
+    meta(name='layoutmode', content='standard')
+    +CSS([
+        '${app}/index/css/app.css'
+    ],[
+        '${app}/index/css/app.css'
+    ])
+block content
+    div#app
+    +JS([
+        '${app}/index/js/bundle.js'
+    ],[
+        '${app}/index/js/bundle.js'
+    ])

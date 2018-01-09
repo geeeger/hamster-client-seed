@@ -1,0 +1,14 @@
+include ./mixins/mixin
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        script.
+            window.$SYS = {
+                CDN: "#{config.CDN}",
+                STATIC_CDN: "#{config.STATIC_CDN}",
+                HOST: "#{config.HOST_NAME}"
+            };
+        block head
+    body() 
+        block body
