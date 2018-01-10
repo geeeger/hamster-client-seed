@@ -98,6 +98,7 @@ function watchTask(task, app, callback){
     watchs(app.src(
         lodash.merge(
             [],
+            ['!**/node_modules/**/*'],
             task.src,
             task.watch
         )

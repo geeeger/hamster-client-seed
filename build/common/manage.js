@@ -258,7 +258,7 @@ class Manage extends EventEmitter {
     _browser(){
         this.browser.init({
             port: 3000,
-            proxy: "http://localhost:8361"
+            proxy: "http://localhost:8360"
         });
     }
 
